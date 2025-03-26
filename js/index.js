@@ -69,7 +69,7 @@ favoriteList.appendChild(movieCard);
 function removeFromFavorites(id) {
 fetch(`http://localhost:3000/favorites/${id}`, {
     method: "DELETE"
-})
+ })
     .then(() => fetchFavorites())  // Refresh favorites
     .catch(error => console.error("Error removing from favorites:", error));
 }
