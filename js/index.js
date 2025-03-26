@@ -60,6 +60,9 @@ function fetchFavorites() {
                     <h3>${movie.title}</h3>
                     <button onclick="removeFromFavorites('${movie.id}')">Remove</button>
                 `;
-
+                favoriteList.appendChild(movieCard);
+            });
+        });
+}
 
 
