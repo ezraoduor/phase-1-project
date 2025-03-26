@@ -73,4 +73,9 @@ fetch(`http://localhost:3000/favorites/${id}`, {
     .then(() => fetchFavorites())  // Refresh favorites
     .catch(error => console.error("Error removing from favorites:", error));
 }
+document.getElementById("addMovieBtn").addEventListener("click", function() {
+    let title = document.getElementById("title").value;
+    let poster = document.getElementById("poster").value;
+    let description = document.getElementById("description").value;
+
 
