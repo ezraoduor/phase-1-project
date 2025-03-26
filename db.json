@@ -1,0 +1,57 @@
+{
+  "favorites": [
+    {
+      "id": "tt0111161",
+      "title": "The Shawshank Redemption",
+      "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg"
+    },
+    {
+      "id": "tt0068646",
+      "title": "The Godfather",
+      "description": "An organized crime dynasty's aging patriarch transfers control of his clandestine empire to his reluctant son.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg"
+    },
+    {
+      "id": "tt0071562",
+      "title": "The Godfather: Part II",
+      "description": "The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son expands his grip on the family crime syndicate.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/0/03/Godfather_part_ii.jpg"
+    },
+    {
+      "id": "tt0108052",
+      "title": "Schindler's List",
+      "description": "Oskar Schindler, a businessman in Nazi-occupied Poland, risks everything to save over a thousand Jewish refugees.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/3/38/Schindler%27s_List_movie.jpg"
+    },
+    {
+      "id": "tt0109830",
+      "title": "Forrest Gump",
+      "description": "The life journey of Forrest Gump, a slow-witted but kind-hearted man who unwittingly influences historical events.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/6/67/Forrest_Gump_poster.jpg"
+    },
+    {
+      "id": "tt0080684",
+      "title": "Star Wars: The Empire Strikes Back",
+      "description": "After the Rebels are overpowered by the Empire, Luke Skywalker begins Jedi training with Yoda.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/3/3f/The_Empire_Strikes_Back_%281980_film%29.jpg"
+    },
+    {
+      "id": "tt0133093",
+      "title": "The Matrix",
+      "description": "A hacker discovers the truth about his reality and joins a rebellion against its controllers.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg"
+    },
+    {
+      "id": "tt0120815",
+      "title": "Saving Private Ryan",
+      "description": "During World War II, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/a/ac/Saving_Private_Ryan_poster.jpg"
+    },
+    {
+      "id": "tt1853728",
+      "title": "Django Unchained",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/8/8b/Django_Unchained_Poster.jpg"
+    }
+  ]
+}
