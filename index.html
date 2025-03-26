@@ -3,11 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Movie Search & Favorites</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/index.js" defer></script>
 </head>
 <body>
-    
+
+    <header>
+        <h1>Movie Search</h1>
+        <input type="text" id="searchBox" placeholder="Search for a movie...">
+    </header>
+
+    <main>
+        <section id="movies">
+            <h2>Movies</h2>
+            <div id="movie-list" class="grid"></div>
+        </section>
+
+        <section id="favorites">
+            <h2>Favorite Movies</h2>
+            <div id="favorite-list" class="grid"></div>
+        </section>
+    </main>
+
+    <section id="add-movie">
+        <h2>Add a Movie</h2>
+        <input type="text" id="title" placeholder="Movie Title">
+        <input type="text" id="poster" placeholder="Poster URL">
+        <textarea id="description" placeholder="Movie Description"></textarea>
+        <button id="addMovieBtn">Add Movie</button>
+    </section>
+
+    <script src="index.js"></script>
 </body>
 </html>

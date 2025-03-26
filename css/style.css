@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #111;
+    padding: 20px;
+    font-size: 24px;
+}
+
+#searchBox {
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+
+h2 {
+    border-bottom: 2px solid red;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie-card {
+    width: 200px;
+    margin: 15px;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+#add-movie {
+    margin: 20px;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+}
