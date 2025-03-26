@@ -37,10 +37,10 @@ document.getElementById("searchBox").addEventListener("input", function() {
 
 function addToFavorites(id, title, poster) {
     fetch("http://localhost:3000/favorites", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ id, title, poster })
-    })
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ id, title, poster })
+})
     .then(() => fetchFavorites())  // Refresh favorites
     .catch(error => console.error("Error adding to favorites:", error));
 }
