@@ -44,6 +44,22 @@ function addToFavorites(id, title, poster) {
     .then(() => fetchFavorites())  // Refresh favorites
     .catch(error => console.error("Error adding to favorites:", error));
 }
+function fetchFavorites() {
+    fetch("http://localhost:3000/favorites")
+        .then(response => response.json())
+        .then(data => {
+            let favoriteList = document.getElementById("favorite-list");
+            favoriteList.innerHTML = "";
+
+            data.forEach(movie => {
+                let movieCard = document.createElement("div");
+                movieCard.classList.add("movie-card");
+
+                movieCard.innerHTML = `
+                    <img src="${movie.poster}" alt="${movie.title}">
+                    <h3>${movie.title}</h3>
+                    <button onclick="removeFromFavorites('${movie.id}')">Remove</button>
+                `;
 
 
 
