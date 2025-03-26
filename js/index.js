@@ -24,6 +24,16 @@ function displayMovies(movies) {
 });
 }
 
+document.getElementById("searchBox").addEventListener("input", function() {
+    let searchQuery = this.value.toLowerCase();
+    
+    fetch("http://localhost:3000/favorites")
+    .then(response => response.json())
+    .then(data => {
+        let filteredMovies = data.filter(movie => movie.title.toLowerCase().includes(searchQuery));
+        displayMovies(filteredMovies);
+});
+});
 
 
 
