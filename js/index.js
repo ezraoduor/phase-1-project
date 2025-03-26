@@ -77,5 +77,9 @@ document.getElementById("addMovieBtn").addEventListener("click", function() {
     let title = document.getElementById("title").value;
     let poster = document.getElementById("poster").value;
     let description = document.getElementById("description").value;
+    if (!title || !poster || !description) {
+        alert("Please fill in all fields!");
+        return;
+    }
 
 
