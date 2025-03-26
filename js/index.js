@@ -82,4 +82,17 @@ document.getElementById("addMovieBtn").addEventListener("click", function() {
         return;
     }
 
+    let newMovie = { id: Date.now().toString(), title, poster, description };
+
+    fetch("http://localhost:3000/favorites", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(newMovie)
+    })
+    .then(() => {
+        fetchMovies();  // Refresh movie list
+        document.getElementById("title").value = "";
+        document.getElementById("poster").value = "";
+        document.getElementById("description").value = "";
+    })
 
