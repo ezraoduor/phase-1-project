@@ -78,7 +78,7 @@ document.getElementById("addMovieBtn").addEventListener("click", function() {
     let poster = document.getElementById("poster").value;
     let description = document.getElementById("description").value;
     if (!title || !poster || !description) {
-        alert("Please fill in all fields!");
+     alert("Please fill in all fields!");
         return;
     }
 
@@ -95,4 +95,6 @@ document.getElementById("addMovieBtn").addEventListener("click", function() {
         document.getElementById("poster").value = "";
         document.getElementById("description").value = "";
     })
+    .catch(error => console.error("Error adding movie:", error));
+});
 
