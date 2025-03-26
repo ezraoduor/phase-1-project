@@ -98,3 +98,6 @@ document.getElementById("addMovieBtn").addEventListener("click", function() {
     .catch(error => console.error("Error adding movie:", error));
 });
 
+fetchMovies();
+fetchFavorites();
+
