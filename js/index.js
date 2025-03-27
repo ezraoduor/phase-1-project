@@ -100,4 +100,3 @@ document.getElementById("addMovieBtn").addEventListener("click", function() {
 
 fetchMovies();
 fetchFavorites();
-
