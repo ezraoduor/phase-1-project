@@ -41,7 +41,7 @@ function addToFavorites(id, title, poster) {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ id, title, poster })
 })
-    .then(() => fetchFavorites())  // Refresh favorites
+    .then(() => fetchFavorites())  
     .catch(error => console.error("Error adding to favorites:", error));
 }
 function fetchFavorites() {
@@ -70,7 +70,7 @@ function removeFromFavorites(id) {
 fetch(`http://localhost:3000/favorites/${id}`, {
     method: "DELETE"
  })
-    .then(() => fetchFavorites())  // Refresh favorites
+    .then(() => fetchFavorites())  
     .catch(error => console.error("Error removing from favorites:", error));
 }
 document.getElementById("addMovieBtn").addEventListener("click", function() {
@@ -90,7 +90,7 @@ document.getElementById("addMovieBtn").addEventListener("click", function() {
         body: JSON.stringify(newMovie)
     })
     .then(() => {
-        fetchMovies();  // Refresh movie list
+        fetchMovies();  
         document.getElementById("title").value = "";
         document.getElementById("poster").value = "";
         document.getElementById("description").value = "";
